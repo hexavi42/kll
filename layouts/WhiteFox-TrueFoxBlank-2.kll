@@ -7,10 +7,13 @@ KLL = "0.3c";
 Date = "2016-05-30";
 Generator = "KIICONF 0.2";
 
+U"ESC" : U"ESC";
 U"1" : CONS"BRIGHTNESSDECREMENT";
 U"2" : CONS"BRIGHTNESSINCREMENT";
-U"5" : ledControl( 3, 15, 0 );
-U"6" : ledControl( 4, 15, 0 );
+U"3" : ledControl( 5, 0, 0 );
+U"4" : ledControl( 5, 100, 0 );
+U"5" : ledControl( 3, 1, 0 );
+U"6" : ledControl( 4, 1, 0 );
 U"7" : CONS"REWIND";
 U"8" : CONS"PAUSEPLAY";
 U"9" : CONS"FASTFORWARD";
@@ -28,6 +31,10 @@ U"K" : U"P5";
 U"L" : U"P6";
 U"N" : U"P0";
 U"M" : U"P1";
+U"W" : U"UP";
+U"A" : U"LEFT";
+U"S" : U"DOWN";
+U"D" : U"RIGHT";
 U"COMMA" : U"P2";
 U"PERIOD" : U"P3";
 
