@@ -28,6 +28,9 @@ U"J" : U"LEFT";
 U"K" : U"DOWN";
 U"L" : U"RIGHT";
 
+# Don't None everything else - I still need do access ESC with one hand
+# but TODO: None a lot of things
+
 # LED Default Enable Mask
 #
 # By default, all LEDs are enabled
