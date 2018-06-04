@@ -1,7 +1,7 @@
 #!/bin/bash
 # Use example .kll files to check syntax compatibility
 # Does not generate code, so resulting datastructures do not necessarily need to functino
-# Jacob Alexander 2016
+# Jacob Alexander 2016-2018
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Common functions
@@ -13,6 +13,8 @@ cd ${SCRIPT_DIR}/..
 
 # Args used for each of the tests
 ARGS="--emitter none --data-finalization-display"
+ARGS_TOKEN="--emitter none --data-finalization-display --parser-token-debug"
+ARGS_OPER="--emitter none --data-finalization-display --operation-organization-display"
 FAIL_ARGS="--emitter none --token-debug --parser-token-debug --operation-organization-display --data-organization-display --data-finalization-display"
 
 # Files to check syntax on
@@ -30,6 +32,9 @@ FILES=(
 	examples/simple2.kll
 	examples/simpleExample.kll
 	examples/state_scheduling.kll
+	layouts/mouseTest.kll
+	layouts/klltest.kll
+	examples/triggers.kll
 )
 
 
@@ -37,6 +42,8 @@ FILES=(
 
 
 cmds "./kll" "${ARGS}" "${FAIL_ARGS}" ${FILES[@]}
+cmds "./kll" "${ARGS_TOKEN}" "${FAIL_ARGS}" ${FILES[@]}
+cmds "./kll" "${ARGS_OPER}" "${FAIL_ARGS}" ${FILES[@]}
 
 
 ## Tests complete

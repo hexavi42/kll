@@ -1,7 +1,7 @@
 #!/bin/bash
 # Use example .kll files to check basic kll processing
 # Does a diff comparison with a pre-generated file for validation
-# Jacob Alexander 2016
+# Jacob Alexander 2016-2018
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Common functions
@@ -18,7 +18,6 @@ rm -rf ${SCRIPT_DIR}/generated_regen*
 ARGS="--emitter kll --output-debug"
 LAST_ARG=" --target-dir ${SCRIPT_DIR}/generated_regen/"
 FAIL_ARGS="--emitter kll --token-debug --parser-token-debug --operation-organization-display --data-organization-display --data-finalization-display"
-FAIL_ARGS=""
 
 # Files to check syntax on
 FILES=(
@@ -35,6 +34,9 @@ FILES=(
 	examples/simple2.kll
 	examples/simpleExample.kll
 	examples/state_scheduling.kll
+	layouts/mouseTest.kll
+	layouts/klltest.kll
+	examples/triggers.kll
 )
 
 

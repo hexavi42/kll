@@ -1,4 +1,4 @@
-/* Copyright (C) 2016-2017 by Jacob Alexander
+/* Copyright (C) 2016-2018 by Jacob Alexander
  *
  * This file is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -43,7 +43,6 @@
 
 
 // Pixel Display Mapping
-// TODO This table should be generated based off the physical x,y,z positions of each of the pixels
 // TODO type should be determined by Pixel_TotalPixels
 <|PixelDisplayMapping|>
 
@@ -54,6 +53,11 @@
 // Index of animations
 //  uint8_t *Pixel_Animations[] = { <animation>_frames, ... }
 <|Animations|>
+// Animation Settings
+//  const AnimationStackElement AnimationSettings[] = {
+//    { <triggerguide>, <index>, <pos>, <subpos>, <loops>, <framedelay>, <frameoption>, <ffunc>, <pfunc>, <replace>, <state> }, ...
+//  }
+<|AnimationSettings|>
 
 
 // ScanCode to Pixel Mapping
