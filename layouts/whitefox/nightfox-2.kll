@@ -1,0 +1,38 @@
+Name = "WhiteFox";
+Layout = "TrueFoxBlank";
+Base = "AllBlank";
+Version = "0.2";
+Author = "HaaTa (Jacob Alexander) 2015";
+KLL = "0.3c";
+Date = "2016-05-30";
+Generator = "KIICONF 0.2";
+
+U"ESC" : U"ESC";
+U"7" : CONS"REWIND";
+U"8" : CONS"PAUSEPLAY";
+U"9" : CONS"FASTFORWARD";
+U"0" : CONS"MUTE";
+U"MINUS" : CONS"VOLUMEDOWN";
+U"EQUAL" : CONS"VOLUMEUP";
+U"HASH" : SYS"POWERDOWN";
+U"BACKSPACE" : SYS"SLEEP";
+U"BACKTICK" : SYS"WAKEUP";
+U"U" : U"P7";
+U"I" : U"P8";
+U"O" : U"P9";
+U"J" : U"P4";
+U"K" : U"P5";
+U"L" : U"P6";
+U"N" : U"P0";
+U"M" : U"P1";
+U"W" : U"UP";
+U"A" : U"LEFT";
+U"S" : U"DOWN";
+U"D" : U"RIGHT";
+U"COMMA" : U"P2";
+U"PERIOD" : U"P3";
+
+U"LBRACE" : U"UP";
+U"SEMICOLON" : U"LEFT";
+U"QUOTE" : U"RIGHT";
+U"SLASH" : U"DOWN";
